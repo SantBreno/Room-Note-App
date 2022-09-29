@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/breno/AndroidStudioProjects/RoomNote/app/src/main/res/drawable/ic_back_arrow.xml" value="0.2645" />
+        <entry key="..\:/Users/breno/AndroidStudioProjects/RoomNote/app/src/main/res/drawable/ic_done.xml" value="0.2645" />
+        <entry key="..\:/Users/breno/AndroidStudioProjects/RoomNote/app/src/main/res/drawable/ic_launcher_background.xml" value="0.175" />
+        <entry key="..\:/Users/breno/AndroidStudioProjects/RoomNote/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/breno/AndroidStudioProjects/RoomNote/app/src/main/res/layout/fragment_addnotes.xml" value="0.1" />
+        <entry key="..\:/Users/breno/AndroidStudioProjects/RoomNote/app/src/main/res/layout/fragment_note_add.xml" value="0.75" />
+        <entry key="..\:/Users/breno/AndroidStudioProjects/RoomNote/app/src/main/res/layout/fragment_note_list.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/breno/AndroidStudioProjects/RoomNote/app/src/main/res/layout/fragment_notescard.xml" value="0.28940217391304346" />
+        <entry key="..\:/Users/breno/AndroidStudioProjects/RoomNote/app/src/main/res/layout/item_row_note.xml" value="0.25" />
+        <entry key="..\:/Users/breno/AndroidStudioProjects/RoomNote/app/src/main/res/menu/menu_top_note_add.xml" value="0.359375" />
+        <entry key="..\:/Users/breno/AndroidStudioProjects/RoomNote/app/src/main/res/menu/menu_top_note_list.xml" value="0.36354166666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

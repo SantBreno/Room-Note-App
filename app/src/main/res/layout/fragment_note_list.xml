@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorOnPrimary"
+        tools:context=".ui.note.list.NoteListFragment">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayoutList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar_note_list"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorOnPrimary"
+                android:elevation="@null"
+                app:menu="@menu/menu_top_note_list">
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list_note"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:clipToPadding="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayoutList"
+            app:layout_constraintVertical_bias="0.0">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

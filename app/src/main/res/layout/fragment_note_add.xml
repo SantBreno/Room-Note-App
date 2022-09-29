@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorOnPrimary"
+        tools:context=".ui.note.add.NoteAddFragment">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar_note_add"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorOnPrimary"
+                app:menu="@menu/menu_top_note_add"
+                app:navigationIcon="@drawable/ic_back_arrow"
+                app:navigationIconTint="?attr/colorPrimary">
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <EditText
+            android:id="@+id/et_note_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:hint="@string/title_note_hint"
+            tools:ignore="MissingConstraints"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:paddingHorizontal="8dp"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/et_note_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:alpha="0.5"
+            android:background="@null"
+            android:inputType="textMultiLine"
+            android:gravity="start|top"
+            android:lineSpacingMultiplier="1.5"
+            android:paddingHorizontal="8dp"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_note_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:hint="@string/note_content_hint"
+            android:autofillHints="" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
