@@ -7,7 +7,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="?attr/colorOnPrimary"
+        android:background="@color/white_solid"
         tools:context=".ui.note.list.NoteListFragment">
 
         <com.google.android.material.appbar.AppBarLayout
@@ -27,6 +27,14 @@
                 android:background="?attr/colorOnPrimary"
                 android:elevation="@null"
                 app:menu="@menu/menu_top_note_list">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bitter_bold"
+                    android:text="@string/notes_io"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="21sp"/>
 
             </com.google.android.material.appbar.MaterialToolbar>
 
@@ -50,6 +58,24 @@
 
         </androidx.recyclerview.widget.RecyclerView>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_list_note_add"
+            android:layout_width="138dp"
+            android:layout_height="56dp"
+            app:cornerRadius="10dp"
+            android:gravity="center"
+            app:icon="@drawable/ic_add"
+            android:backgroundTint="@color/opera_blue"
+            app:iconGravity="textStart"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/text_new_note"
+            android:fontFamily="@font/bitter_bold"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
