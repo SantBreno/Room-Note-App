@@ -10,7 +10,7 @@ class NoteRepository @Inject constructor(private val db: NoteDatabase) {
     // insert note
     suspend fun insert(notes: Note) = db.getNoteDao().insertNote(notes)
 
-    // get saved note
+    // get saved not
     fun getSavedNote() = db.getNoteDao().getNotes()
 
     // update note
