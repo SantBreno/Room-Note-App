@@ -16,6 +16,6 @@ class NoteRepository @Inject constructor(private val db: NoteDatabase) {
     // update note
     suspend fun update(notes: Note) = db.getNoteDao().updateNote(notes)
 
-    // delete note
+    // delete notes
     suspend fun deleteNote(id: Int) = db.getNoteDao().deleteNote(id)
 }
